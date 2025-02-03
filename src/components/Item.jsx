@@ -1,9 +1,14 @@
 import '../styles/style.css';
 
 function Item() {
+  // const index = 0;
+  let clicked;
+
+  const onClicked = ()=>{
+    clicked=true;
+  }
   return (
-    <div>
-      <div className="newlist" id="newlist">
+      <div className="newlist" id="newlist" onClick={onClicked}>
         <div className="new-item" id="parentDiv">
           <div className="new-item-content">
             <div className="new-item-content-top">
@@ -47,7 +52,6 @@ function Item() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
